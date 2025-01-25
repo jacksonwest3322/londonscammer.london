@@ -1,29 +1,42 @@
-document.querySelector('.click-to-enter').addEventListener('click', function() {
-    this.classList.add('hide');
-    
-    document.querySelector('.main-content').classList.add('show');
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Click to Enter</title>
+  <link rel="stylesheet" href="assets1/styles.css">
+</head>
+<body>
+  <div class="click-to-enter">
+    <p>Click to Enter</p>
+  </div>
 
-    var video = document.getElementById('background-video');
-    video.muted = false;
-    video.play();
-});
+  <div class="main-content">
+    <div class="video-background">
+      <video id="background-video" autoplay loop muted>
+        <source src="assets1/video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
 
-function copyEthereumAddress() {
-    navigator.clipboard.writeText("eth addy");
-    alert("Ethereum address copied to clipboard!");
-}
+    <div class="bio-box">
+      <h1>Cb0mB</h1>
+      <p>Vortex Services</p>
+      <p>discord.gg/JEgMeAyEcN</p>
+      <p></p>
+      <p>email me: <a href="mailto:cb0mb@rileyb.co.uk">cb0mb@rileyb.co.uk</a></p>
+      <p></p>
 
-function copyLitecoinAddress() {
-    navigator.clipboard.writeText("ltc addy");
-    alert("Litecoin address copied to clipboard!");
-}
-
-function copydiscorduser() {
-    navigator.clipboard.writeText("j1stackzsz");
-    alert("Discord User copied to clipboard!");
-}
-
-function copyemail() {
-    navigator.clipboard.writeText("j1@popbob.org");
-    alert("Email copied to clipboard!");
-}
+      <div class="social-buttons">
+        <a href="https://discordapp.com/users/1190427495674171423" class="social-button"">
+          <img src="assets/buttons/discord.png" alt="Discord">
+        </a>
+        <a href="https://t.me/Cb0mB2k12" class="social-button" target="_blank">
+          <img src="assets/buttons/telegram.png" alt="Telegram">
+        </a>
+      </div>
+    </div>
+  </div>
+  <script src="assets/script.js"></script>
+</body>
+</html>
